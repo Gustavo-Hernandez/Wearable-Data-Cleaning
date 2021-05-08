@@ -33,7 +33,7 @@ In order to get the  `features_names` the logic vector previously obtained is ap
     features_names <- gsub("[-]|[()]","",features_names)
     
 **Reading the files**
-Because the files are *.txt* and are not comma separated the function `read.table` is used.
+Because the files are *.txt*s and are not comma separated, the function `read.table` is used.
 After reading the file the logic vector `features_mask` is applied to `x_datasetName` in order to only get the specified features *-the ones related with mean and standard deviation-*. After reading the `y_datasetName` and the `subject_datasetName` the resulting tables are merged using a column bind with the `cbind` function.
 
     # Load and merge test data.
